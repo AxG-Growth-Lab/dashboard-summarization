@@ -74,7 +74,7 @@ data "google_iam_policy" "noauth" {
   binding {
     role = "roles/run.invoker"
     members = [
-      "allUsers",
+      "looker-dash-sum@ace-tracker-421517-q9.iam.gserviceaccount.com",
     ]
   }
 }

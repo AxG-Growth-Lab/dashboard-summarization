@@ -1,19 +1,19 @@
 variable "project_id" {
   type = string
-  default = "YOUR_PROJECT_ID"
+  default = "ace-tracker-421517-q9"
 }
 
 variable "deployment_region" {
   type = string
-  default = "YOUR_REGION"
+  default = "us-central1"
 }
 
 variable "docker_image" {
     type = string
-    default = "YOUR_DOCKER_IMAGE_URL"
+    default = "us-central1-docker.pkg.dev/ace-tracker-421517-q9/dashboard-summarization/websocketservice"
 }
 
 variable "cloud_run_service_name" {
     type = string
-    default = "websocket-service"
+    default = "websocketservice"
 }
