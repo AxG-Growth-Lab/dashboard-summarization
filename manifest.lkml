@@ -3,8 +3,8 @@ project_name: "dashboard-summarization"
 
 application: dashboard-summarization {
   label: "Dashboard Insights Powered by Gemini"
-  file: "bundle.js"
-  #url: "http://localhost:8080/bundle.js"
+  #file: "bundle.js"
+  url: "http://localhost:8080/bundle.js"
   mount_points: {
     dashboard_vis: yes
     dashboard_tile: yes
@@ -16,7 +16,7 @@ application: dashboard-summarization {
     core_api_methods: ["me","run_inline_query","all_lookml_models","dashboard","dashboard_dashboard_elements"]
     external_api_urls: [
    "us-central1-docker.pkg.dev/ace-tracker-421517-q9/dashboard-summarization/websocketservice@sha256:357d4022a4192c692448d9372efedbae3b0ca8919c371c5c6fcefc6fc4532254"
-  ,"http://localhost:5000","http://localhost:3000","http://localhost:8080","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*"
+  ,"http://localhost:5000","http://localhost:3000","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*"
   ]
     oauth2_urls: [
       "https://accounts.google.com/o/oauth2/v2/auth",
