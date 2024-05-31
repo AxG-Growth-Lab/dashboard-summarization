@@ -7,15 +7,15 @@
   elements:
   - title: Shopping Marketing Campaign Data
     name: Shopping Marketing Campaign Data
-    model: gl_gemini_demo
-    explore: sample_shopping_data_gl_demo_
+    model: growth_lab_demo
+    explore: growth_lab_demo
     type: looker_grid
-    fields: [sample_shopping_data_gl_demo_.campaign_name, sample_shopping_data_gl_demo_.product,
-      sample_shopping_data_gl_demo_.quarter, sample_shopping_data_gl_demo_.data_pull_dates,
-      sample_shopping_data_gl_demo_.impressions, sample_shopping_data_gl_demo_.clicks,
-      sample_shopping_data_gl_demo_.ctr, sample_shopping_data_gl_demo_.cost, sample_shopping_data_gl_demo_.cpc,
-      sample_shopping_data_gl_demo_.cps, sample_shopping_data_gl_demo_.suns]
-    sorts: [sample_shopping_data_gl_demo_.campaign_name]
+    fields: [growth_lab_demo.campaign_name, growth_lab_demo.product,
+      growth_lab_demo.quarter, growth_lab_demo.data_pull_dates,
+      growth_lab_demo.impressions, growth_lab_demo.clicks,
+      growth_lab_demo.ctr, growth_lab_demo.cost, growth_lab_demo.cpc,
+      growth_lab_demo.cps, growth_lab_demo.suns]
+    sorts: [growth_lab_demo.campaign_name]
     limit: 500
     column_limit: 50
     show_view_names: false
@@ -66,15 +66,15 @@
     height: 12
   - title: Total Clicks
     name: Total Clicks
-    model: gl_gemini_demo
-    explore: sample_shopping_data_gl_demo_
+    model: growth_lab_demo
+    explore: growth_lab_demo
     type: single_value
     fields: [sum_of_clicks]
     limit: 500
     column_limit: 50
     dynamic_fields:
     - measure: sum_of_clicks
-      based_on: sample_shopping_data_gl_demo_.clicks
+      based_on: growth_lab_demo.clicks
       expression: ''
       label: Sum of Clicks
       type: sum
@@ -101,15 +101,15 @@
     height: 2
   - title: Total Impressions
     name: Total Impressions
-    model: gl_gemini_demo
-    explore: sample_shopping_data_gl_demo_
+    model: growth_lab_demo
+    explore: growth_lab_demo
     type: single_value
     fields: [sum_of_impressions]
     limit: 500
     column_limit: 50
     dynamic_fields:
     - measure: sum_of_impressions
-      based_on: sample_shopping_data_gl_demo_.impressions
+      based_on: growth_lab_demo.impressions
       expression: ''
       label: Sum of Impressions
       type: sum
@@ -132,15 +132,15 @@
     height: 2
   - title: Total Cost
     name: Total Cost
-    model: gl_gemini_demo
-    explore: sample_shopping_data_gl_demo_
+    model: growth_lab_demo
+    explore: growth_lab_demo
     type: single_value
     fields: [sum_of_cost]
     limit: 500
     column_limit: 50
     dynamic_fields:
     - measure: sum_of_cost
-      based_on: sample_shopping_data_gl_demo_.cost
+      based_on: growth_lab_demo.cost
       expression: ''
       label: Sum of Cost
       type: sum
@@ -163,15 +163,15 @@
     height: 2
   - title: Total SUNs
     name: Total SUNs
-    model: gl_gemini_demo
-    explore: sample_shopping_data_gl_demo_
+    model: growth_lab_demo
+    explore: growth_lab_demo
     type: single_value
     fields: [sum_of_suns]
     limit: 500
     column_limit: 50
     dynamic_fields:
     - measure: sum_of_suns
-      based_on: sample_shopping_data_gl_demo_.suns
+      based_on: growth_lab_demo.suns
       expression: ''
       label: Sum of Suns
       type: sum
