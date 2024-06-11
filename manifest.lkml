@@ -4,7 +4,7 @@ project_name: "dashboard-summarization"
 application: dashboard-summarization {
   label: "Dashboard Insights Powered by Gemini"
   #file: "bundle.js"
-  url: "http://localhost:8080/bundle.js"
+  url: "http://localhost:8080/dist/bundle.js"
   mount_points: {
     dashboard_vis: yes
     dashboard_tile: yes
