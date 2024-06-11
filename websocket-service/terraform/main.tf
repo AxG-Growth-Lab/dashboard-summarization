@@ -45,7 +45,9 @@ resource "google_cloud_run_v2_service" "default" {
     }
     session_affinity = true
     timeout = "300s"
-    max_instance_request_concurrency = 80
+    max_instance_request_concurrency = 80      
+
+
 
     containers {
         image = var.docker_image
@@ -74,7 +76,8 @@ data "google_iam_policy" "noauth" {
   binding {
     role = "roles/run.invoker"
     members = [
-      "looker-dash-sum@ace-tracker-421517-q9.iam.gserviceaccount.com",
+      #"allUsers",
+      #"serviceAccount:looker-dash-sum@ace-tracker-421517-q9.iam.gserviceaccount.com",
     ]
   }
 }

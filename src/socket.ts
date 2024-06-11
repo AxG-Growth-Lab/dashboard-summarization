@@ -24,15 +24,18 @@ SOFTWARE.
 
 */
 
-import { io } from 'socket.io-client'
+import { io } from 'socket.io-client';
 
-const URL = process.env.NODE_ENV === 'production' ? process.env.WEBSOCKET_SERVICE!
- : 'http://localhost:5000'
+const URL =
+  process.env.NODE_ENV === 'production' ? 'http://127.0.0.1:8080' //process.env.WEBSOCKET_SERVICE!
+     : 'http://localhost:5000';
+    
 
-export const socket = io(URL,{
-    timeout: 120000, 
-    reconnection:true,
-    reconnectionDelay: 1000,
-    autoConnect: false,
-    transports:['websocket']
-})
+export const socket = io(URL, {
+  timeout: 120000,
+  reconnection: true,
+  reconnectionDelay: 1000,
+  autoConnect: false,
+  transports: ['websocket'],
+  secure: process.env.NODE_ENV === 'production',
+});
