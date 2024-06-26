@@ -3,8 +3,8 @@ project_name: "dashboard-summarization"
 
 application: dashboard-summarization {
   label: "Dashboard Insights Powered by Gemini"
-  file: "bundle.js"
-  #url: "http://localhost:8080/bundle.js"
+  #file: "bundle.js"
+  url: "http://localhost:8080/bundle.js"
   mount_points: {
     dashboard_vis: yes
     dashboard_tile: yes
@@ -15,7 +15,7 @@ application: dashboard-summarization {
     use_form_submit: yes
     core_api_methods: ["me","run_inline_query","all_lookml_models","dashboard","dashboard_dashboard_elements"]
     external_api_urls: [
-"https://websocketservice-2hhpumxzma-uc.a.run.app","http://localhost:5000","http://localhost:3000","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*",
+"https://websocketservice-2hhpumxzma-uw.a.run.app","http://localhost:5000","http://localhost:3000","https://*.googleapis.com","https://slack.com/api/*","https://slack.com/*",
 "http://127.0.0.1:8080"]
 
     oauth2_urls: [
