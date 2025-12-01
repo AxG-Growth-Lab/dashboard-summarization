@@ -10,4 +10,4 @@ datagroup: gl_dashboard_sum_default_datagroup {
 
 persist_with: gl_dashboard_sum_default_datagroup
 
-explore: growth_lab_demo {view_name: sample_shopping_data}
+# explore: growth_lab_demo {view_name: sample_shopping_data}
